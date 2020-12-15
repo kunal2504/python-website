@@ -20,7 +20,7 @@ $ docker run -it ubuntu:latest bash
 ## How to run this website
 
 ```shell
-$ git clone https://github.com/arunksingh16/python_website.git
+$ git clone URL
 
 $ docker build -t flask-sample:v1 .
 
@@ -40,9 +40,9 @@ $ docker logs <container_id>
 ## Checking in these images in hub
 
 ```shell
-$ docker build . -t arun161087/flask-portfolio:v1
+$ docker build . -t kunal2504/flask-portfolio:v1
 
-$ docker push arun161087/flask-portfolio:v1
+$ docker push kunal2504/flask-portfolio:v1
 ```
 
 ## Other Support commands
@@ -61,8 +61,8 @@ $ docker
 # Kubernetes Experiment
 
 ```shell
-$ kubectl run pod1 --image=arun161087/flask-portfolio:v1 --generator=run-pod/v1 --dry-run
-$ kubectl run pod1 --image=arun161087/flask-portfolio:v1 --generator=run-pod/v1
+$ kubectl run pod1 --image=kunal2504/flask-portfolio:v1 --generator=run-pod/v1 --dry-run
+$ kubectl run pod1 --image=kunal2504/flask-portfolio:v1 --generator=run-pod/v1
 $ kubectl get pods -o wide
 $ kubectl label pods pod1 env=dev
 
